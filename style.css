@@ -3,79 +3,124 @@
 }
 
 .banner {
-    width: 300px;
-    height: 250px;
+    width: 320px;
+    height: 480px;
     border: 1px solid black;
     overflow: hidden;
     position: relative;
-}
-
-.frame_start_txt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 0 15px 0;
-}
-
-.frame_start-txt_1,
-.frame_start-txt_2,
-.frame_start-txt_3 {
-    color: #2cb34a;
-    font-family: "Tilt Warp";
-    text-transform: uppercase;
-    font-size: 23px;
-}
-
-.wrap p {
-    width: 50%; 
-    margin: 0 auto; 
-    text-align: center;
-}
-
-.frame_start-list {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.frame_start-list li {
-    text-decoration: none;
-    color: #2cb34a;
-    font-family: "Tilt Warp";
-    font-size: 14px;
-}
-
-.btn {
-    width: 50%; 
-    margin: 10px auto;
-    text-align: center;
-}
-
-button {
-    background-color: #e8383f;
-    font-family: "Tilt Warp";
-    font-weight: bold;
-    font-size: 18px;
-    text-transform: uppercase;
-    border: none;
-    width: 146px;
-    height: 32px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-button a {
-    text-decoration: none;
-    color: white;
-}
-.frame_start-txt_4 {
-    color: #2cb34a;
-    font-family: "Tilt Warp";
-    text-transform: uppercase;
-    font-size: 16px;
-    margin: auto;
+    padding: 0;
+    margin: 0;
 }
 
 .logo {
-    width: 280px;
+    width: 120px;
+    position: absolute;
+    z-index: 2;
+    left: 33%;
+    top: 20px;
+    filter: invert(99%) sepia(1%) saturate(2%) hue-rotate(65deg) brightness(112%) contrast(100%);
 }
+
+.screen-1 {
+    width: 320px;
+    height: 480px;
+    background-image: url(./img/forest-road.png);
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    /* position: absolute; */
+}
+
+
+.car {
+    width: 30px;
+    position: absolute;
+    left: 148px;
+    bottom: -30px;
+}
+
+.screen-1 .title-1,
+.screen-1 .title-2 {
+    font-family: "Roboto";
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    left: 100px;
+    bottom: 190px;
+}
+
+.screen-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.screen-2 .title-1,
+.screen-2 .title-2 {
+    font-family: "Roboto";
+    text-transform: uppercase;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.screen-2 .title-1 {
+    position: absolute;
+    left: 115px;
+    top: 77px;
+}
+
+.screen-2 .title-2 {
+    position: absolute;
+    left: 115px;
+    top: 380px;
+}
+
+.t_logo {
+    width: 90px;
+    position: absolute;
+    z-index: 2;
+    left: 32px;
+    top: 40px;
+}
+
+.line {
+    position: absolute;
+    z-index: 2;
+    width: 89px;
+    left: 32px;
+    top: 30px;
+    background-color: #50af31;
+    height: 8px;
+    border-radius: 10px;
+}
+
+.line_logo {
+    position: relative;
+    margin: 170px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    transform-origin: 50% 50%;
+}
+
+
+
 

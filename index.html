@@ -5,41 +5,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>GSAP Project II</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tilt+Warp">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
         <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     </head>
 
     <body>
         <div class="banner">
-            <div class="frame frame_start">
-                <p class="frame_start_txt">
-                    <span class="frame_start-txt_1">unlock your</span>
-                    <span class="frame_start-txt_1">data deal</span>
-                    <span class="frame_start-txt_1">of the day</span>
-                </p>
+            <img class="logo" src="./img/logo.png">
+            <div class="screen screen-1">
+                <img class="car" src="./img/car.png">
+                <div class="title title-1">
+                    <span class="title_item-1">пайда</span>
+                    <span class="title_item-1">таңдау</span>
+                    <span class="title_item-1">уақыты</span>
+                </div>
+                <div class="title title-2">
+                    <span class="title_item-2">время</span>
+                    <span class="title_item-2">выбирать</span>
+                    <span class="title_item-2">выгоду</span>
+                </div>
             </div>
-            <div class="wrap">
-                <ul class="frame_start-list">
-                    <li>Simple</li>
-                    <li>Transparent</li>
-                    <li>Honest</li>
-                </ul>
-                <p class="frame_start-txt_4">For you</p>
+            <div class="screen screen-2">
+                <div class="title-1">
+                    <span>қолайлы</span>
+                    <span>бағалар</span>
+                </div>
+                <div class="line_logo">
+                    <div class="line"></div>
+                    <img class="t_logo" src="./img/t.svg">
+                </div>
+                <div class="title-2">
+                    <span>выгодная</span>
+                    <span>цена</span>
+                </div>
             </div>
-            <div class="btn">
-                <button><a href="https://tuleubayeva-malika.github.io/malika_pf/" target="_blank">Click here</a></button>
-            </div>
-            <img class="logo" src="/GSAP_Project_II/logo.png">
         </div>
 
         <script>
             let tl = gsap.timeline();
-            tl.from(".frame_start_txt", {y:65, scale:1.3, delay:2})
-            tl.from(".btn", {opacity:0, rotationY:180})
-            tl.from(".frame_start-list li", {stagger: 0.5, scale:0.9, opacity:0, duration:0.5})
-            tl.from(".frame_start-txt_4", {stagger: 0.5, scale:0.9, opacity:0, duration:0.5})
-            tl.from(".logo", {opacity:0, duration:0.5})
+            tl.to(".car", {yPercent:-850, duration:7, ease: Linear})
+            tl.from(".title_item-1", {scale:2, opacity:0}, "<")
+            tl.to(".title_item-1", {opacity:0, delay:1}, "<1")
+            tl.from(".title_item-2", {scale:2, opacity:0}, "<0.5")
+            tl.to(".title_item-2", {opacity:0, delay:1}, "<1")
+                  
+            tl.from(".screen-2", {opacity:0}, "<1")
+            tl.from(".title-1 span", {stagger: 0.2, scale:0, opacity:0}, "<")
+            tl.from(".title-2 span", {stagger: 0.2, scale:0, opacity:0}, "<")
+            tl.from(".line_logo", {stagger: 0.2, scale:1.5, opacity:0, rotate:40}, "<")
+            tl.from(".line", {width:"0px"}, "<")
         </script>
     </body>
 </html>
