@@ -1,1 +1,1 @@
-[GSAP_Project_II](https://tuleubayeva-malika.github.io/GSAP_Project_II/)
+[GSAPProject3](https://tuleubayeva-malika.github.io/Banner3/)
